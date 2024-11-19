@@ -139,9 +139,9 @@ public struct CalendarView: UIViewRepresentable {
 		
 		if let selection {
 			if let dateSelection = calendarView.selectionBehavior as? UICalendarSelectionSingleDate {
-				if dateSelection.selectedDate?.yearMonthDay != selection.wrappedValue?.yearMonthDay {
+				//if dateSelection.selectedDate?.yearMonthDay != selection.wrappedValue?.yearMonthDay {
 					dateSelection.setSelected(selection.wrappedValue, animated: canAnimate || selection.canAnimate)
-				}
+				//}
 				
 				dateSelection.updateSelectableDates()
 			} else {
